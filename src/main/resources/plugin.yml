@@ -1,0 +1,4 @@
+name: EpicGame
+version: ${project.version}
+main: com.mrlolethan.epicgame.P
+authors: [MrLolEthan]
