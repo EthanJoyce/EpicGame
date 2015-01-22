@@ -2,7 +2,7 @@
  A framework for developing games in Minecraft using the Bukkit API.
 ----------
 
-EpicGame is a framework designed and developed for the creation of extended-gameplay games (I.E an MMORPG). This is **not** a functional plugin by itself, but a framework for developers to use.
+EpicGame is a framework designed and developed for the creation of extended-gameplay games (e.g. an MMORPG). This is **not** a functional plugin by itself, but a framework for developers to use.
 
 ###Building:
 ----------
