@@ -14,9 +14,19 @@ public abstract class GameManager {
 	 * 
 	 * @param game The {@link Game} instance to register.
 	 * @throws NullPointerException If the input {@link Game} is null.
+	 * @throws GameInitializationException If the input {@link Game} encounters an error during initialization.
 	 * @return True if the {@link Game} was loaded successfully, false if an issue occured.
 	 */
 	public abstract boolean registerGame(Game game);
+
+	/**
+	 * Unregisters and terminates the current {@link Game} object.
+	 * 
+	 * @throws NullPointerException If the input {@link Game} is null.
+	 * @throws GameTerminationException If the input {@link Game} encounters an error during termination.
+	 * @return True if the {@link Game} was terminated successfully, false if an issue occured.
+	 */
+	public abstract boolean unregisterGame();
 
 	/**
 	 * Get the registered {@link Game} instance.

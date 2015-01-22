@@ -7,9 +7,9 @@ import com.mrlolethan.epicgame.framework.Game;
 public class MemoryGameManager extends GameManager {
 
 	public boolean registerGame(Game game) {
-		Validate.notNull(game, "EpicGame cannot be null");
+		Validate.notNull(game, "Game cannot be null");
 
-		// Attempt the initialization of the EpicGame instance.
+		// Attempt the initialization of the Game instance.
 		try {
 			game.initialize();
 		} catch (GameInitializationException ex) {
@@ -20,6 +20,22 @@ public class MemoryGameManager extends GameManager {
 		this.game = game;
 		return true;
 	}
+
+	public boolean unregisterGame() {
+		Validate.notNull(game, "Game cannot be null");
+
+		// Attempt the termination of the Game instance.
+		try {
+			game.terminate();
+		} catch (GameTerminationException ex) {
+			ex.printStackTrace();
+			return false; // Error terminating the Game instance.
+		}
+
+		this.game = game;
+		return true;
+	}
+
 
 	public Game getGame() {
 		return this.game;

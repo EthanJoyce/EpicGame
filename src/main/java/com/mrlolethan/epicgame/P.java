@@ -16,6 +16,7 @@ public class P extends JavaPlugin {
 	}
 
 	public void onDisable() {
+		EpicGame.getGameManager().unregisterGame();
 		p = null;
 	}
 
