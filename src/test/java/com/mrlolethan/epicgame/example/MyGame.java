@@ -11,7 +11,7 @@ public class MyGame extends Game {
 	}
 
 	public void terminate() {
-		// Not yet implemented in framework ;(
+		Bukkit.getLogger().info("MyGame was terminated!");
 	}
 
 }

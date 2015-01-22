@@ -1,6 +1,7 @@
 package com.mrlolethan.epicgame.framework;
 
 import com.mrlolethan.epicgame.gamemanager.GameInitializationException;
+import com.mrlolethan.epicgame.gamemanager.GameTerminationException;
 
 public abstract class Game {
 
@@ -12,6 +13,6 @@ public abstract class Game {
 	/**
 	 * Terminate the (@link Game) instance. Equivalent to Bukkit's JavaPlugin::onDisable() method.
 	 */
-	public abstract void terminate();
+	public abstract void terminate() throws GameTerminationException;
 
 }
