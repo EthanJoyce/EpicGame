@@ -14,7 +14,7 @@
     </properties>
 
     <build>
-        <defaultGoal>clean package</defaultGoal>
+        <defaultGoal>clean package jar:test-jar</defaultGoal>
         <finalName>EpicGame</finalName>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
         <resources>
