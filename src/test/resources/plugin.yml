@@ -1,0 +1,5 @@
+name: MyEpicGame
+version: 1.0-EXAMPLE
+main: com.mrlolethan.epicgame.example.P
+authors: [MrLolEthan]
+depend: [EpicGame]
