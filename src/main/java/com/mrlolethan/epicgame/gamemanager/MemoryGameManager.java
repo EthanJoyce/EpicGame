@@ -32,7 +32,7 @@ public class MemoryGameManager extends GameManager {
 			return false; // Error terminating the Game instance.
 		}
 
-		this.game = game;
+		this.game = null;
 		return true;
 	}
 
